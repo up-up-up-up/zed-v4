@@ -1,39 +1,17 @@
+
 # Yolo Object Detection and Distance Measurement with Zed camera
 
-you can test object detection and distance measurement with zed camera
+1.run  zed.py
 
+2.CSDN blog address：https://blog.csdn.net/qq_45077760
 
-### How to use 
+If you have any questions, please contact me through my blog
 
-You need to run this script like that `python zed.py `
-or if you use tensorRT yolo, You need to run this script like that `python zed_trt.py `
-You need to edit the codes in `zed.py` line according to yourself.
+Range map display：
 
-specify the yolo weights and config files you trained before.
-~~~~~~~~~~~~
-45. weightsPath = "yolov4-obj_last.weights"
-46. configPath = "yolov4-obj.cfg"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+![02](https://user-images.githubusercontent.com/93062610/229509560-fb9ddcf0-f815-444b-8521-27e5fe405dab.png)
 
-then you need to edit the following lines in `zed.py` 
+Depth map display：
 
-Size should be changed according to your config file
-~~~~~~
-56. model.setInputParams(size=(608, 608), scale=1/255, swapRB=True)
-~~~~~~~~~~~~~~~~~~~~
-Edit them according to your class labels.
-~~~~~~~~~~~~
-68.  LABELS = [ 'class_name1',
-                'class_name2',
-                'class_name3',
-                'class_name3',
-                .
-                .
-                .
-                ]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     
-that's all, if you have a zed camera you can easily find the distance of the objects you have detected
-## You can see how the program works in the gif below.
-
-![into gif](https://github.com/MehmetOKUYAR/Zed_Yolo_distance_measurement/blob/master/intro.gif)
+![03](https://user-images.githubusercontent.com/93062610/229510135-11e49cab-2e2a-46e7-9c77-329c3fc66ef1.png)
 
